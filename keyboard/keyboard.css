@@ -1,8 +1,9 @@
 #dis-input {
   border: 1px solid #2e2e2e;
-  padding: 3px 8px;
-  height: 24px;
-  width: 400px;
+  text-align: center;
+  padding: 6px 18px;
+  height: 18px;
+  width: 500px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -17,12 +18,14 @@
 }
 
 .keyrow button {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   margin: 3px 5px;
   border-radius: 0;
 }
-
+.keyrow button:hover {
+  background-color: aqua;
+}
 #clear {
   width: 50px;
 }
