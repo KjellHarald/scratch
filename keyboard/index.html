@@ -1,0 +1,56 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keyboard</title>
+    <link rel="stylesheet" href="keyboard.css" />
+  </head>
+  <body>
+    <div id="dis-input"></div>
+    <div id="layoutlowercase">
+      <div class="keyrow">
+        <button onclick="layoutLowercase(key='q');">q</button>
+        <button onclick="layoutLowercase(key='w');">w</button>
+        <button onclick="layoutLowercase(key='e');">e</button>
+        <button onclick="layoutLowercase(key='r');">r</button>
+        <button onclick="layoutLowercase(key='t');">t</button>
+        <button onclick="layoutLowercase(key='y');">y</button>
+        <button onclick="layoutLowercase(key='u');">u</button>
+        <button onclick="layoutLowercase(key='i');">i</button>
+        <button onclick="layoutLowercase(key='o');">o</button>
+        <button onclick="layoutLowercase(key='p');">p</button>
+        <button onclick="layoutLowercase(key='å');">å</button>
+      </div>
+      <div class="keyrow">
+        <button onclick="layoutLowercase(key='a');">a</button>
+        <button onclick="layoutLowercase(key='s');">s</button>
+        <button onclick="layoutLowercase(key='d');">d</button>
+        <button onclick="layoutLowercase(key='f');">f</button>
+        <button onclick="layoutLowercase(key='g');">g</button>
+        <button onclick="layoutLowercase(key='h');">h</button>
+        <button onclick="layoutLowercase(key='j');">j</button>
+        <button onclick="layoutLowercase(key='k');">k</button>
+        <button onclick="layoutLowercase(key='l');">l</button>
+        <button onclick="layoutLowercase(key='ø');">ø</button>
+        <button onclick="layoutLowercase(key='æ');">æ</button>
+      </div>
+      <div class="keyrow">
+        <button onclick="layoutLowercase(key='z');">z</button>
+        <button onclick="layoutLowercase(key='x');">x</button>
+        <button onclick="layoutLowercase(key='c');">c</button>
+        <button onclick="layoutLowercase(key='v');">v</button>
+        <button onclick="layoutLowercase(key='b');">b</button>
+        <button onclick="layoutLowercase(key='n');">n</button>
+        <button onclick="layoutLowercase(key='m');">m</button>
+      </div>
+
+      <div class="keyrow">
+        <button onclick="clearInput()" id="clear">Clear</button>
+        <button onclick="layoutLowercase(key=' ');" id="space">Space</button>
+        <button onclick="backspace()" id="backspace">Backspace</button>
+      </div>
+    </div>
+    <script src="keyboard.js"></script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+#dis-input {
+  border: 1px solid #2e2e2e;
+  padding: 3px 8px;
+  height: 24px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#layoutlovercase {
+  display: flex;
+  flex-direction: column;
+}
+.keyrow {
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+}
+
+.keyrow button {
+  width: 30px;
+  height: 30px;
+  margin: 3px 5px;
+  border-radius: 0;
+}
+
+#clear {
+  width: 50px;
+}
+#space {
+  width: 150px;
+}
+#backspace {
+  width: 80px;
+}
