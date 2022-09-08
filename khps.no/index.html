@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kjell Harald Pedersen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF8" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta http-equiv="refresh" content="5" />
+    <script type="text/javascript">
+      function renderProjects() {
+        const p = ["1", "2", "3"];
+        const a = ["1", "2", "3"];
+
+        for (let index = 0; index < p.length; index++) {
+          const node = document.createElement("div");
+          document.getElementsByTagName("body").appendChild(node);
+        }
+      }
+      renderProjects();
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Kjell Harald</h1>
+    </header>
+
+    <a href="kort.html">Kort</a>
+    <a href="#">Github</a>
+    <a href="#">Projects</a>
+
+    <p id="demo"></p>
+    <script>
+      const c = ["A", "B", "C", "D"];
+      let n = Math.floor(Math.random() * 3);
+      document.getElementById("demo").innerHTML = c[n];
+    </script>
+  </body>
+</html>

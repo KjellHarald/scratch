@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  background-color: #2e2e2e;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*background-image: url("sky.jpg");
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;*/
+  background-color: #2e2e2e;
+  height: 130px;
+  width: 100%;
+}
+#text-logo {
+  margin: 15px 0 0 0;
+  font-size: 36px;
+  text-align: center;
+  font-family: arial;
+  color: #0040ff;
+  text-shadow: 0px 0px 5px white;
+}
+.search {
+  width: 400px;
+  padding: 8px 18px;
+  line-height: 24px;
+  border-radius: 35px;
+  margin: 8px auto;
+  border: 1px solid cornflowerblue;
+}
+#clock {
+  font-size: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 0;
+  text-shadow: 0 0 1px #2e2e2e;
+  color: white;
+}
+#preview {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10px;
+}
+/*
+.wrap-preview-row {
+  display: flex;
+  justify-content: center;
+  margin: 0 20px;
+}
+.preview-item {
+  box-shadow: 0px 0px 2px 2px #2e9afe;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  width: 300px;
+  margin: 8px 8px;
+  height: 200px;
+}*/
+/*tmp*/
+#preview img {
+  width: 300px;
+  height: 200px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px 2px #2e9afe;
+}
+footer {
+  padding: 12px 4px;
+  text-align: center;
+  color: #fff;
+}
+#created-in {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
