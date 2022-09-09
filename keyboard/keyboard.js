@@ -11,17 +11,28 @@ function casesetting(c) {
     state = "lowercase";
   }
 }
+
 function layoutLowercase(key) {
   if (!isNaN(key)) {
     console.log(key);
 
-    if (input === undefined) {
+    if (input === undefined && operator === undefined) {
       input = key;
-    } else if (!isNaN(input)) {
+    } else if (!isNaN(input) && operator === undefined) {
       input = input + "" + key;
     }
 
-    show.textContent = input;
+    if (operator !== undefined) {
+      operator = key;
+    }
+
+    if (operator !== undefined && input >= 1) {
+      show.textContent = input + key;
+    } else {
+      show.textContent = input;
+    }
+  } else if (key === "+") {
+    operator = "+";
   } else {
     input = input + key;
     show.textContent = input;
@@ -30,6 +41,7 @@ function layoutLowercase(key) {
 
 function clearInput() {
   input = undefined;
+  operator = undefined;
   show.textContent = "";
 }
 
