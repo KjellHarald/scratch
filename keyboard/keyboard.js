@@ -1,13 +1,35 @@
 let show = document.getElementById("dis-input");
-let input = "";
+let input;
+let second;
+let operator;
+let state = "lowercase";
 
+function casesetting(c) {
+  if (state !== "lowercase") {
+    state = "uppercase";
+  } else {
+    state = "lowercase";
+  }
+}
 function layoutLowercase(key) {
-  input = input + key;
-  show.textContent = input;
+  if (!isNaN(key)) {
+    console.log(key);
+
+    if (input === undefined) {
+      input = key;
+    } else if (!isNaN(input)) {
+      input = input + "" + key;
+    }
+
+    show.textContent = input;
+  } else {
+    input = input + key;
+    show.textContent = input;
+  }
 }
 
 function clearInput() {
-  input = "";
+  input = undefined;
   show.textContent = "";
 }
 
@@ -18,6 +40,6 @@ function backspace() {
 
 function keyHighlightKeyPress() {}
 
-if (input === "") {
+if (input === undefined) {
   show.textContent = "Your text";
 }

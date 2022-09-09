@@ -42,7 +42,8 @@ body {
   border: 1px solid #2e2e2e;
 }
 .keyrow button:hover {
-  background-color: aqua;
+  background-color: #2e2e2e;
+  color: #fff;
 }
 #clear {
   width: 50px;
