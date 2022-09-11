@@ -14,28 +14,30 @@ function casesetting(c) {
 
 function layoutLowercase(key) {
   if (!isNaN(key)) {
+    fornumbers(key=key);
     console.log(key);
-
-    if (input === undefined && operator === undefined) {
-      input = key;
-    } else if (!isNaN(input) && operator === undefined) {
-      input = input + "" + key;
-    }
-
-    if (operator !== undefined) {
-      operator = key;
-    }
-
-    if (operator !== undefined && input >= 1) {
-      show.textContent = input + key;
-    } else {
-      show.textContent = input;
-    }
   } else if (key === "+") {
     operator = "+";
   } else {
     input = input + key;
     show.textContent = input;
+  }
+}
+
+function fornumbers(key){
+  if (input === undefined && operator === undefined) {
+    input = key;
+  } else if (!isNaN(input) && operator === undefined) {
+    input = input + "" + key;
+  }
+
+  if (operator !== undefined && input >= 1 || second >= 1) {
+    second = second + "" + key
+    show.textContent = input +""+ second;
+  }
+
+  if (operator !== undefined) {
+    operator = key;
   }
 }
 
