@@ -14,7 +14,18 @@ function email(email) {
   }
 }
 
-const project = [
-  ['Skybox'],
-  ['Keyboard']
-];
+function showProjects() {
+  const projects = [["Skybox"], ["Keyboard"]];
+
+  for (let i = 0; i < projects.length; i++) {
+    let context = document.querySelector(".context");
+    let newProject = document.createElement("div");
+    newProject.setAttribute("class", "project");
+    context.appendChild(newProject);
+  }
+}
+
+function PXtoEM(px) {
+  document.getElementById("pxtoem");
+  em = px / 16;
+}
