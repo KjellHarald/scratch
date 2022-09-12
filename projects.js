@@ -14,16 +14,20 @@ function email(email) {
   }
 }
 
-function showProjects() {
-  const projects = [["Skybox"], ["Keyboard"]];
+//function showProjects() {
+const projects = [["Skybox"], ["Keyboard"]];
 
-  for (let i = 0; i < projects.length; i++) {
-    let context = document.querySelector(".context");
-    let newProject = document.createElement("div");
-    newProject.setAttribute("class", "project");
-    context.appendChild(newProject);
-  }
+for (let i = 0; i < projects.length; i++) {
+  let DisplayProject = projects[i][0];
+  let context = document.querySelector(".context");
+  let newProject = document.createElement("div");
+  newProject.setAttribute("class", "project");
+  newProject.setAttribute("id", DisplayProject);
+  context.appendChild(newProject);
+
+  document.getElementById(DisplayProject).innerHTML = DisplayProject;
 }
+//}
 
 function PXtoEM(px) {
   document.getElementById("pxtoem");
