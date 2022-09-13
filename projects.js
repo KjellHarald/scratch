@@ -1,3 +1,16 @@
+const projects = [["Skybox", "Hei Verden"], ["Keyboard"]];
+console.log("l");
+for (let i = 0; i < projects.length; i++) {
+  let DisplayProject = projects[i][0];
+  let context = document.getElementById("context");
+  let newProject = document.createElement("div");
+  newProject.setAttribute("class", "project");
+  newProject.setAttribute("id", DisplayProject);
+  context.appendChild(newProject);
+
+  document.getElementById(DisplayProject).innerHTML = DisplayProject;
+}
+
 function email(email) {
   const addr = [
     "gmail.com",
@@ -13,21 +26,6 @@ function email(email) {
     console.log(email);
   }
 }
-
-//function showProjects() {
-const projects = [["Skybox"], ["Keyboard"]];
-
-for (let i = 0; i < projects.length; i++) {
-  let DisplayProject = projects[i][0];
-  let context = document.querySelector(".context");
-  let newProject = document.createElement("div");
-  newProject.setAttribute("class", "project");
-  newProject.setAttribute("id", DisplayProject);
-  context.appendChild(newProject);
-
-  document.getElementById(DisplayProject).innerHTML = DisplayProject;
-}
-//}
 
 function PXtoEM(px) {
   document.getElementById("pxtoem");
