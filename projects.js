@@ -11,23 +11,27 @@ for (let i = 0; i < projects.length; i++) {
   document.getElementById(DisplayProject).innerHTML = DisplayProject;
 }
 
-function email(email) {
-  const addr = [
-    "gmail.com",
-    "yahoo.com",
-    "hotmail.com",
-    "live.com",
-    "outlook.com",
-  ];
+const project0 = {
+  projectName: "Skybox",
+  projectInfo: [],
+};
 
-  if (addr.includes(email.split("@")[1])) {
-    console.log("I do not like this email: " + email);
-  } else {
-    console.log(email);
-  }
-}
+const project1 = {
+  projectName: "Keyboard",
+  projectInfo: [],
+};
 
-function PXtoEM(px) {
-  document.getElementById("pxtoem");
-  em = px / 16;
-}
+const project2 = {
+  projectName: "Keyboard",
+  projectInfo: "",
+};
+
+const project3 = {
+  projectName: "Keyboard",
+  projectInfo: "",
+};
+
+const project4 = {
+  projectName: "Keyboard",
+  projectInfo: "",
+};
