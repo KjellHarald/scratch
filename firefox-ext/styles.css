@@ -3,11 +3,11 @@ body {
   height: 400px;
   color: #000;
   background-color: #f2f2f2;
+  overflow-y: scroll;
 }
-#add {
+button {
   padding: 4px 12px;
-  background-color: #00b149;
-  color: #fff;
-  border-radius: 5px;
-  border: 0;
+}
+li {
+  margin: 4px 0;
 }

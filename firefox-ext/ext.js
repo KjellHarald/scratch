@@ -1,13 +1,19 @@
 let store = [];
 const btn = document.getElementById("btn");
 const add = document.getElementById("add");
-const save = document.getElementById("save");
+const rmlast = document.getElementById("rmlast");
 
-if (localStorage.getItem("store") !== null) {
+if (store.lenght === undefined && localStorage.getItem("store") !== null) {
   let cs = localStorage.getItem("store");
   store = JSON.parse(cs);
   render();
 }
+
+rmlast.addEventListener("click", function rmlast() {
+  store = store.pop();
+  pushstorage();
+  render();
+});
 
 add.addEventListener("click", function add() {
   let tabQuery = chrome.tabs.query(
@@ -15,18 +21,21 @@ add.addEventListener("click", function add() {
     function (tabs) {
       let url = tabs[0].url;
       store.push(url);
+      pushstorage();
+      render();
     }
   );
 });
 
-save.addEventListener("click", function save() {
+function pushstorage() {
   localStorage.setItem("store", JSON.stringify(store));
-  store = [];
-  render();
-});
+}
 
 function render() {
-  for (let i = 1; i < store.length; i++) {
-    btn.textContent = store[i];
+  btn.innerHTML = "";
+  let links = "";
+  for (let i = 0; i < store.length; i++) {
+    links += `<li><a href="${store[i]}">${store[i]}</a></li>`;
   }
+  btn.innerHTML = links;
 }

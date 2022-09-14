@@ -27,3 +27,5 @@ function PXtoEM(px) {
   document.getElementById("pxtoem");
   em = px / 16;
 }
+
+//typeof Number("10001");
