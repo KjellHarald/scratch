@@ -34,12 +34,11 @@ button {
 #btn {
   padding: 4px;
 }
-#btn p {
+#btn a {
+  display: block;
   margin: 6px 0;
   line-break: anywhere;
   font-size: 14px;
-}
-#btn a {
   color: #2e2e2e;
 }
 #btn a:hover {
