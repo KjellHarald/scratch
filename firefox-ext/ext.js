@@ -5,6 +5,7 @@ const save = document.getElementById("save");
 const rmfirst = document.getElementById("rmfirst");
 const rmlast = document.getElementById("rmlast");
 const wrap = document.getElementById("footer");
+const clear = document.getElementById("clear");
 
 const download = () => {
   wrap.innerHTML = "";
@@ -42,6 +43,12 @@ rmfirst.addEventListener("click", () => {
 
 rmlast.addEventListener("click", () => {
   store.pop();
+  render();
+});
+
+clear.addEventListener("dblclick", () => {
+  store = [];
+  localStorage.clear();
   render();
 });
 
