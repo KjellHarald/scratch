@@ -1,7 +1,8 @@
 {
   "manifest_version": 3,
-  "version": "1.0",
+  "version": "1.0.0",
   "name": "Prosjekt",
+  "description": "Add, remove (l/r) direction, Save and download urls as an stringified JSON array, delivered in a txt file.",
   "action": {
     "default_popup": "index.html",
     "default_icon": "icon.png"

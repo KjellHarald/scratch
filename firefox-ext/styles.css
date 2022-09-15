@@ -1,13 +1,55 @@
 body {
+  margin: 0;
   width: 300px;
   height: 400px;
   color: #000;
   background-color: #f2f2f2;
   overflow-y: scroll;
 }
-button {
-  padding: 4px 12px;
+#wrap-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #0099ff;
+  padding: 4px;
+  box-shadow: 0px 1px 1px #2e2e2e, 0px 1px 1px #2e2e2e, 0px 1px 1px #2e2e2e,
+    0px 1px 1px #2e2e2e;
 }
-li {
-  margin: 4px 0;
+button {
+  padding: 4px 14px;
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+#add,
+#save {
+  background-color: #00ff00;
+}
+#rmfirst,
+#rmlast {
+  background-color: orange;
+}
+#dl {
+  color: #2e2e2e;
+}
+#btn {
+  padding: 4px;
+}
+#btn p {
+  margin: 6px 0;
+  line-break: anywhere;
+  font-size: 14px;
+}
+#btn a {
+  color: #2e2e2e;
+}
+#btn a:hover {
+  background-color: #00ff00;
+}
+#footer {
+  text-align: center;
+  padding: 4px 4px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #e6e6e6;
 }
