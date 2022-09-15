@@ -13,11 +13,9 @@ const download = () => {
   wrap.innerHTML = dl;
 };
 
-function pushstorage() {
-  localStorage.setItem("store", JSON.stringify(store));
-}
+const pushstorage = () => localStorage.setItem("store", JSON.stringify(store));
 
-function render() {
+const render = () => {
   btn.innerHTML = "";
   let links = "";
   for (let i = 0; i <= store.length; i++) {
@@ -27,7 +25,7 @@ function render() {
   }
   download();
   btn.innerHTML = links;
-}
+};
 
 if (!store.lenght && localStorage.getItem("store")) {
   console.log(localStorage.getItem("store"));
