@@ -14,7 +14,7 @@ const download = () => {
   wrap.innerHTML = dl;
 };
 
-const pushstorage = () => localStorage.setItem("store", JSON.stringify(store));
+const pushStorage = () => localStorage.setItem("store", JSON.stringify(store));
 
 const render = () => {
   btn.innerHTML = "";
@@ -56,7 +56,7 @@ add.addEventListener("click", () => {
   chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {
     const url = tabs[0].url;
     store.push(url);
-    pushstorage();
+    pushStorage();
     render();
   });
 });
