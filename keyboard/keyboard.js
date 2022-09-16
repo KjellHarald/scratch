@@ -1,7 +1,8 @@
 let show = document.getElementById("dis-input");
 let input;
-let second;
-let operator;
+let n1;
+let n2;
+let math;
 let state = "lowercase";
 
 function casesetting(c) {
@@ -14,30 +15,22 @@ function casesetting(c) {
 
 function layoutLowercase(key) {
   if (!isNaN(key)) {
-    fornumbers(key=key);
-    console.log(key);
-  } else if (key === "+") {
-    operator = "+";
-  } else {
-    input = input + key;
-    show.textContent = input;
+    fornumbers((key = key));
+  }
+
+  switch (true) {
+    case key === "+":
+      math = "+";
+      break;
+    default:
+      input += key;
+      show.textContent = input;
   }
 }
 
-function fornumbers(key){
-  if (input === undefined && operator === undefined) {
-    input = key;
-  } else if (!isNaN(input) && operator === undefined) {
-    input = input + "" + key;
-  }
-
-  if (operator !== undefined && input >= 1 || second >= 1) {
-    second = second + "" + key
-    show.textContent = input +""+ second;
-  }
-
-  if (operator !== undefined) {
-    operator = key;
+function fornumbers(key) {
+  if (!n1 && !math) {
+    n1 += key;
   }
 }
 
@@ -52,8 +45,6 @@ function backspace() {
   show.textContent = input;
 }
 
-function keyHighlightKeyPress() {}
-
-if (input === undefined) {
+if (!input) {
   show.textContent = "Your text";
 }

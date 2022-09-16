@@ -18,14 +18,20 @@ const pushStorage = () => localStorage.setItem("store", JSON.stringify(store));
 
 const render = () => {
   btn.innerHTML = "";
-  let links = "";
-  for (let i = 0; i <= store.length; i++) {
-    if (store[i]) {
-      links += `<a href="${store[i]}" target="_blank">${store[i]}</a>`;
-    }
-  }
+
+  let links = store.map((e) => {
+    const child = document.createElement("a");
+    child.href = e;
+    child.textContent = e;
+    child.target = "_blank";
+    return child;
+  });
+
+  links = links.filter((e) => e !== undefined);
+
+  btn.append(...links);
+
   download();
-  btn.innerHTML = links;
 };
 
 if (!store.lenght && localStorage.getItem("store")) {
