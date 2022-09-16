@@ -7,13 +7,6 @@ const rmlast = document.getElementById("rmlast");
 const wrap = document.getElementById("footer");
 const clear = document.getElementById("clear");
 
-const download = () => {
-  wrap.innerHTML = "";
-  const base64 = btoa(JSON.stringify(store));
-  const dl = `<a id="dl" href="data:application/octet-stream;charset=utf-16le;base64,${base64}">Download text file</a>`;
-  wrap.innerHTML = dl;
-};
-
 const pushStorage = () => localStorage.setItem("store", JSON.stringify(store));
 
 const render = () => {
@@ -27,15 +20,19 @@ const render = () => {
     return child;
   });
 
-  links = links.filter((e) => e !== undefined);
+  //links = links.filter((e) => e !== undefined);
 
   btn.append(...links);
 
-  download();
+  wrap.innerHTML = "";
+  const base64 = btoa(JSON.stringify(store));
+  const dl = document.createElement("a");
+  dl.href = `data:application/octet-stream;charset=utf-16le;base64,${base64}`;
+  dl.textContent = "Download Text File";
+  wrap.appendChild(dl);
 };
 
 if (!store.lenght && localStorage.getItem("store")) {
-  console.log(localStorage.getItem("store"));
   store = JSON.parse(localStorage.getItem("store"));
   render();
 }
