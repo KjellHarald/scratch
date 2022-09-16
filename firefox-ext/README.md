@@ -6,3 +6,5 @@
 4. Save: (after rmf or rml)
 5. Data URI: Document Download
 6. Clear: Remove all leads from localstorage. (Double click)
+
+![alt text](https://github.com/KjellHarald/leadstracker/blob/main/image.jpg?raw=true)
