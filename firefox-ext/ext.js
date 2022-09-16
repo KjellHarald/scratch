@@ -34,7 +34,7 @@ if (!store.lenght && localStorage.getItem("store")) {
   render();
 }
 
-save.addEventListener("click", pushstorage);
+save.addEventListener("click", pushStorage);
 
 rmfirst.addEventListener("click", () => {
   store.shift();
