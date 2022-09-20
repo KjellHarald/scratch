@@ -1,0 +1,85 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  color: #f2f2f2;
+  font-family: "arial", sans-serif;
+  background-color: #2e2e2e;
+}
+
+.title-container {
+  position: absolute;
+  width: 350px;
+  height: 100px;
+  overflow: visible;
+  border: 0px solid #f2f2f2;
+}
+.title-bg {
+  opacity: 0.2;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+.title-txt {
+  color: #0b243b;
+  font-size: 1.6em;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  opacity: 1;
+  z-index: 2;
+}
+.title-txt h1 {
+  margin: 0;
+  padding: 20px;
+}
+.image {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.parimgm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/pexels-pixabay-41951.jpg");
+  min-height: 100%;
+}
+
+.parimg1 {
+  background-image: url("images/pexels-miriam-espacio-2694037.jpg");
+  min-height: 50%;
+}
+
+.parimg2 {
+  background-image: url("images/pexels-alex-andrews-816608.jpg");
+  min-height: 50%;
+}
+.parimg3 {
+  background-image: url("images/pexels-pixabay-39561.jpg");
+  min-height: 75%;
+  animation-name: planet;
+}
+@keyframes planet {
+}
+section {
+  line-height: 30px;
+  text-align: center;
+  font-size: 1.4em;
+  padding: 5% 20%;
+  background-color: #000;
+  box-shadow: 0 2px 4px #fff, 0 2px 4px #fff, 0 2px 4px #fff, 0 2px 4px #fff;
+  opacity: 0.6;
+  border-bottom: 2px solid #000;
+}
+footer {
+  border-top: 1px solid #fff;
+  background-color: #000;
+  text-align: center;
+  padding: 1%;
+}
