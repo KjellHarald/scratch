@@ -23,7 +23,10 @@ html {
   background-color: #000;
 }
 .title-txt {
-  color: #0b243b;
+  font-family: "Impact", "arial", sans-serif;
+  text-shadow: 0px 0px 5px red;
+  border: 2px solid #f2f2f2;
+  color: #fff;
   font-size: 1.6em;
   position: absolute;
   text-align: center;
@@ -35,6 +38,7 @@ html {
   margin: 0;
   padding: 20px;
 }
+
 .image {
   position: relative;
   background-position: center;
@@ -47,26 +51,32 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("images/pexels-pixabay-41951.jpg");
+  background-image: linear-gradient(
+      to bottom right,
+      #00000027,
+      rgba(0, 0, 0, 0.63)
+    ),
+    url("images/pexels-pixabay-41951.jpg");
   min-height: 100%;
 }
 
-.parimg1 {
+.parimg {
+  height: none;
+}
+#parimg1 {
   background-image: url("images/pexels-miriam-espacio-2694037.jpg");
-  min-height: 50%;
+  min-height: 200px;
 }
 
-.parimg2 {
+#parimg2 {
   background-image: url("images/pexels-alex-andrews-816608.jpg");
-  min-height: 50%;
+  min-height: 200px;
 }
-.parimg3 {
+#parimg3 {
   background-image: url("images/pexels-pixabay-39561.jpg");
-  min-height: 75%;
-  animation-name: planet;
+  min-height: 200px;
 }
-@keyframes planet {
-}
+
 section {
   line-height: 30px;
   text-align: center;
@@ -80,6 +90,7 @@ section {
 footer {
   border-top: 1px solid #fff;
   background-color: #000;
+  opacity: 0.8;
   text-align: center;
   padding: 1%;
 }
