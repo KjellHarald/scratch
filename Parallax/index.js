@@ -2,8 +2,6 @@ let bilder = document.querySelectorAll(".parimg");
 let idEl = "";
 let imgDivs = [];
 
-console.log(idEl);
-
 bilder.forEach((e) => {
   const imgEl = e.id;
   imgDivs.push(imgEl);

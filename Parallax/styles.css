@@ -67,7 +67,6 @@ html {
   background-image: url("images/pexels-miriam-espacio-2694037.jpg");
   min-height: 200px;
 }
-
 #parimg2 {
   background-image: url("images/pexels-alex-andrews-816608.jpg");
   min-height: 200px;
@@ -87,6 +86,7 @@ section {
   opacity: 0.6;
   border-bottom: 2px solid #000;
 }
+
 footer {
   border-top: 1px solid #fff;
   background-color: #000;
