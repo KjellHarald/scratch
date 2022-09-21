@@ -6,29 +6,17 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*background-image: url("sky.jpg");
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;*/
-  background-color: #2e2e2e;
-  height: 130px;
+  background-color: #1c1c1c;
+  padding: 12px;
   width: 100%;
 }
 #text-logo {
-  margin: 15px 0 0 0;
+  margin: 0;
   font-size: 36px;
   text-align: center;
   font-family: arial;
   color: #0040ff;
   text-shadow: 0px 0px 5px white;
-}
-.search {
-  width: 400px;
-  padding: 8px 18px;
-  line-height: 24px;
-  border-radius: 35px;
-  margin: 8px auto;
-  border: 1px solid cornflowerblue;
 }
 #clock {
   font-size: 20px;

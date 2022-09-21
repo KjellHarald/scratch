@@ -1,11 +1,8 @@
 <?php
-if(isset($_POST['usr'], $_FILES['file'])){
-    $usr = array('khps'=>'abc');
-    if(array_key_exists($_POST['usr'], $usr) && $usr[$_POST['usr']] === $_POST['key']){
-        $path = "images/".basename($_FILES['file']['name']);
-        if(move_uploaded_file($_FILES['file']['tmp_name'], $path)){
-
-        }
+if(isset($_FILES['file'])){
+    $path = "images/".basename($_FILES['file']['name']);
+    if(move_uploaded_file($_FILES['file']['tmp_name'], $path)){
+            
     }
 }
 
