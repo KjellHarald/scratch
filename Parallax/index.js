@@ -1,20 +1,14 @@
 let bilder = document.querySelectorAll(".parimg");
-let idEl = "";
 let imgDivs = [];
 
 bilder.forEach((e) => {
-  const imgEl = e.id;
-  imgDivs.push(imgEl);
-
-  const thisImgEl = document.getElementById(imgEl);
+  imgDivs.push(e.id);
+  const thisImgEl = document.getElementById(e.id);
   thisImgEl.addEventListener("click", () => {
     if (thisImgEl.style.minHeight !== "200px") {
       thisImgEl.style.minHeight = "200px";
     } else {
-      thisImgEl.style.transition = "3s";
       thisImgEl.style.minHeight = "75%";
-      console.log(thisImgEl.id);
-      idEl = thisImgEl.id;
       closeDivs();
     }
   });
@@ -22,11 +16,9 @@ bilder.forEach((e) => {
 
 const closeDivs = () => {
   imgDivs.forEach((e) => {
-    if (e !== idEl) {
-      const closeDiv = document.getElementById(e);
-      if (closeDiv.style.minHeight != "200px") {
-        closeDiv.style.minHeight = "200px";
-      }
+    const closeDiv = document.getElementById(e);
+    if (closeDiv.style.minHeight !== "75%") {
+      closeDiv.style.minHeight = "200px";
     }
   });
 };

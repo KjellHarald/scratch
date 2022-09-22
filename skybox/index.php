@@ -16,16 +16,22 @@
   <body>
     <header>
       <h1 id="text-logo">Skybox Project</h1>
+      <a href="upload.html">Upload</a>
     </header>
 
-    <div id="preview"></div>
+    <div id="preview">
+      <?php
+        require_once 'api.php';
+        show_images();
+      ?>
+    </div>
     <script>
-      let timer = setInterval(display, 1000);
-      function display() {
-        displayImageBoxes();
-        //$("#preview").load("api.php?images=1");
-      }
-      display();
+      //let timer = setInterval(display, 1000);
+      //function display() {
+      //displayImageBoxes();
+      //$("#preview").load("api.php?images=1");
+      //}
+      //display();
     </script>
 
     <footer>
