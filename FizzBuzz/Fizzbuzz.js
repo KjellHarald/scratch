@@ -1,15 +1,12 @@
 for (let i = 1; i <= 50; i++) {
-  let buzz = i / 5;
-  let fizz = i / 3;
+  bf = "";
 
-  if (buzz % 1 == 0) {
-    console.log("Buzz");
-  }
-  if (fizz % 1 == 0) {
-    console.log("Fizz");
-  }
+  bf += i % 3 ? "" : "Fizz";
+  bf += i % 5 ? "" : "Buzz";
 
-  if (fizz % 1 == 0 && buzz % 1 == 0) {
+  console.log(bf ? bf : i);
+
+  /*if (fizz % 1 == 0 && buzz % 1 == 0) {
     console.log("FizzBuzz");
-  }
+  }*/
 }
