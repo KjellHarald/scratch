@@ -2,7 +2,8 @@
 // This code is insecure! Do not expose
 if(isset($_FILES['file'])){
     
-    count(explode('.', $_FILES['file']['name']));
+    $inputLenght = count(explode('.', $_FILES['file']['name']));
+    explode('.', $_FILES['file']['name'])[$inputLenght];
     
     $path = "images/".basename(date('HisdmY').'-'.$_FILES['file']['name']);
     move_uploaded_file($_FILES['file']['tmp_name'], $path);

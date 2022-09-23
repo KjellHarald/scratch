@@ -1,0 +1,38 @@
+body {
+  margin: 20px;
+  background: linear-gradient(90deg, #fe8db0, #a6dbe2);
+  height: 100vh;
+}
+table {
+  width: 100%;
+  height: 20px;
+  text-align: center;
+}
+table,
+th,
+td {
+  border: 3px solid black;
+  border-collapse: collapse;
+  transition: 0.25s;
+  height: 40px;
+}
+
+button {
+  width: 120px;
+  height: 100px;
+  margin: 40px 10%;
+  justify-self: center;
+  background: linear-gradient(90deg, #fe8db0, #a6dbe2);
+  border: 4px solid black;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+button:hover {
+  border-top: 10px solid black;
+  border-bottom: 10px solid black;
+}
+
+button:hover {
+  cursor: pointer;
+}

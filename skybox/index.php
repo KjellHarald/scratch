@@ -15,8 +15,9 @@
 
   <body>
     <header>
-      <h1 id="text-logo">Skybox Project</h1>
-      <a href="upload.html">Upload</a>
+      <h1 id="text-logo">SKYBOX</h1>
+      <p><a href="upload.html">Upload</a>
+      <a href="#">Camera List</a></p>
     </header>
 
     <div id="preview">
@@ -25,14 +26,6 @@
         show_images();
       ?>
     </div>
-    <script>
-      //let timer = setInterval(display, 1000);
-      //function display() {
-      //displayImageBoxes();
-      //$("#preview").load("api.php?images=1");
-      //}
-      //display();
-    </script>
 
     <footer>
       <div id="created-in">

@@ -28,9 +28,6 @@ const displayImageBoxes = () => {
 };
 
 /*This will scale and descale images on click*/
-
-console.log(bilder);
-
 bilder.forEach((e) => {
   imgDivs.push(e.id);
   const thisImgEl = document.getElementById(e.id);
