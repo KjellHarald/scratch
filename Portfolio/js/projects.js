@@ -1,5 +1,4 @@
 const projects = [["Skybox", "Hei Verden"], ["Keyboard"]];
-console.log("l");
 for (let i = 0; i < projects.length; i++) {
   let DisplayProject = projects[i][0];
   let context = document.getElementById("context");

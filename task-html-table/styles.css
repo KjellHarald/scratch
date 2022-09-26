@@ -12,12 +12,12 @@ td {
   padding: 11px;
 }
 #lunch {
+  padding: 24px;
   font-weight: bold;
   font-size: 1.5em;
   text-align: center;
   writing-mode: vertical-lr;
   text-orientation: upright;
-  padding: 0 auto;
 }
 
 img {
